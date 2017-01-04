@@ -7,16 +7,21 @@
 //
 
 import Foundation
+import UIKit
 
 struct FeedbackViewModel {
 
-    let feedbacks = ["feedback1", "feedback2"]
+    let feedbacks = [("Rate Us", "RateUsStoryboard", "RateUsViewController")]
     
     func numberOfRows() -> Int {
         return feedbacks.count
     }
     
     func titleForRow(row: Int) -> String {
-        return feedbacks[row]
+        return feedbacks[row].0
+    }
+    
+    func tagetVCForRow(row: Int) -> UIViewController {
+        return UIStoryboard(name: feedbacks[row].1, bundle: nil).instantiateViewController(withIdentifier: feedbacks[row].2)
     }
 }

@@ -25,6 +25,13 @@ class FeedbackTableViewController: UITableViewController {
         cell.textLabel?.text = feedbackViewModel.titleForRow(row: indexPath.row)
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let targetVC = feedbackViewModel.tagetVCForRow(row: indexPath.row)
+        self.navigationController?.pushViewController(targetVC, animated: true)
+    }
 
 }
 
