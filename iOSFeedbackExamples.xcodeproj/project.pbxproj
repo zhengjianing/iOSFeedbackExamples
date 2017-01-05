@@ -15,6 +15,9 @@
 		940409E41E1CF6DB00FE53A1 /* FeedbackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940409E31E1CF6DB00FE53A1 /* FeedbackViewModel.swift */; };
 		940409E71E1CF9A800FE53A1 /* RateUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940409E61E1CF9A800FE53A1 /* RateUsViewController.swift */; };
 		940409E91E1CF9D700FE53A1 /* RateUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940409E81E1CF9D700FE53A1 /* RateUs.storyboard */; };
+		940409FA1E1DDCEC00FE53A1 /* ShortSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940409F91E1DDCEC00FE53A1 /* ShortSurveyViewController.swift */; };
+		940409FC1E1DDCF800FE53A1 /* ShortSurvey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940409FB1E1DDCF800FE53A1 /* ShortSurvey.storyboard */; };
+		940409FE1E1DEB0E00FE53A1 /* ShortSurveyDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940409FD1E1DEB0E00FE53A1 /* ShortSurveyDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		940409E31E1CF6DB00FE53A1 /* FeedbackViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewModel.swift; sourceTree = "<group>"; };
 		940409E61E1CF9A800FE53A1 /* RateUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateUsViewController.swift; sourceTree = "<group>"; };
 		940409E81E1CF9D700FE53A1 /* RateUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RateUs.storyboard; sourceTree = "<group>"; };
+		940409F91E1DDCEC00FE53A1 /* ShortSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortSurveyViewController.swift; sourceTree = "<group>"; };
+		940409FB1E1DDCF800FE53A1 /* ShortSurvey.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShortSurvey.storyboard; sourceTree = "<group>"; };
+		940409FD1E1DEB0E00FE53A1 /* ShortSurveyDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortSurveyDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +71,11 @@
 				940409D31E1CF3E000FE53A1 /* FeedbackTableViewController.swift */,
 				940409E31E1CF6DB00FE53A1 /* FeedbackViewModel.swift */,
 				940409E51E1CF92A00FE53A1 /* Rate Us */,
-				940409EA1E1DD8FA00FE53A1 /* Floating Button */,
 				940409EC1E1DD94500FE53A1 /* Negative */,
 				940409EB1E1DD91600FE53A1 /* Reward */,
+				940409F11E1DD9D700FE53A1 /* Short Survey */,
+				940409F21E1DD9EF00FE53A1 /* Long Survey */,
+				940409EA1E1DD8FA00FE53A1 /* Floating Button */,
 				940409ED1E1DD96200FE53A1 /* QRCode */,
 				940409F81E1DDA7600FE53A1 /* Shake to Feedback */,
 				940409F71E1DDA6900FE53A1 /* Friendly Crash */,
@@ -75,8 +83,6 @@
 				940409F51E1DDA4A00FE53A1 /* Instant Message */,
 				940409F41E1DDA1700FE53A1 /* Contact Us */,
 				940409F31E1DD9FD00FE53A1 /* Voice */,
-				940409F21E1DD9EF00FE53A1 /* Long Survey */,
-				940409F11E1DD9D700FE53A1 /* Short Survey */,
 				940409F01E1DD9BD00FE53A1 /* General */,
 				940409EF1E1DD9B000FE53A1 /* FAQ */,
 				940409EE1E1DD96900FE53A1 /* Social Share */,
@@ -148,6 +154,9 @@
 		940409F11E1DD9D700FE53A1 /* Short Survey */ = {
 			isa = PBXGroup;
 			children = (
+				940409F91E1DDCEC00FE53A1 /* ShortSurveyViewController.swift */,
+				940409FD1E1DEB0E00FE53A1 /* ShortSurveyDetailTableViewController.swift */,
+				940409FB1E1DDCF800FE53A1 /* ShortSurvey.storyboard */,
 			);
 			name = "Short Survey";
 			sourceTree = "<group>";
@@ -264,6 +273,7 @@
 				940409D91E1CF3E000FE53A1 /* Assets.xcassets in Resources */,
 				940409D71E1CF3E000FE53A1 /* Main.storyboard in Resources */,
 				940409E91E1CF9D700FE53A1 /* RateUs.storyboard in Resources */,
+				940409FC1E1DDCF800FE53A1 /* ShortSurvey.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940409FA1E1DDCEC00FE53A1 /* ShortSurveyViewController.swift in Sources */,
+				940409FE1E1DEB0E00FE53A1 /* ShortSurveyDetailTableViewController.swift in Sources */,
 				940409E71E1CF9A800FE53A1 /* RateUsViewController.swift in Sources */,
 				940409D41E1CF3E000FE53A1 /* FeedbackTableViewController.swift in Sources */,
 				940409D21E1CF3E000FE53A1 /* AppDelegate.swift in Sources */,

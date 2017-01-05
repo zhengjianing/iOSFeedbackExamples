@@ -12,7 +12,7 @@ import UIKit
 struct FeedbackViewModel {
 
     // Format: Cell title, Storyboard name, View Controller name
-    let feedbacks = [("Rate Us", "RateUs", "RateUsViewController")]
+    let feedbacks = [("Rate Us", "RateUs", "RateUsViewController"), ("Short Survey", "ShortSurvey", "ShortSurveyViewController")]
     
     func numberOfRows() -> Int {
         return feedbacks.count
