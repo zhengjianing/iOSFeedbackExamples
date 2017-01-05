@@ -11,7 +11,8 @@ import UIKit
 
 struct FeedbackViewModel {
 
-    let feedbacks = [("Rate Us", "RateUsStoryboard", "RateUsViewController")]
+    // Format: Cell title, Storyboard name, View Controller name
+    let feedbacks = [("Rate Us", "RateUs", "RateUsViewController")]
     
     func numberOfRows() -> Int {
         return feedbacks.count
@@ -21,7 +22,12 @@ struct FeedbackViewModel {
         return feedbacks[row].0
     }
     
-    func tagetVCForRow(row: Int) -> UIViewController {
-        return UIStoryboard(name: feedbacks[row].1, bundle: nil).instantiateViewController(withIdentifier: feedbacks[row].2)
+    func storyboardNameForRow(row: Int) -> String {
+        return feedbacks[row].1
     }
+    
+    func viewControllerIdentifierForRow(row: Int) -> String {
+        return feedbacks[row].2
+    }
+    
 }

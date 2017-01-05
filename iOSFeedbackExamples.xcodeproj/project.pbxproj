@@ -14,7 +14,7 @@
 		940409DC1E1CF3E000FE53A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940409DA1E1CF3E000FE53A1 /* LaunchScreen.storyboard */; };
 		940409E41E1CF6DB00FE53A1 /* FeedbackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940409E31E1CF6DB00FE53A1 /* FeedbackViewModel.swift */; };
 		940409E71E1CF9A800FE53A1 /* RateUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940409E61E1CF9A800FE53A1 /* RateUsViewController.swift */; };
-		940409E91E1CF9D700FE53A1 /* RateUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940409E81E1CF9D700FE53A1 /* RateUsStoryboard.storyboard */; };
+		940409E91E1CF9D700FE53A1 /* RateUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940409E81E1CF9D700FE53A1 /* RateUs.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		940409DD1E1CF3E000FE53A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		940409E31E1CF6DB00FE53A1 /* FeedbackViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewModel.swift; sourceTree = "<group>"; };
 		940409E61E1CF9A800FE53A1 /* RateUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateUsViewController.swift; sourceTree = "<group>"; };
-		940409E81E1CF9D700FE53A1 /* RateUsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RateUsStoryboard.storyboard; sourceTree = "<group>"; };
+		940409E81E1CF9D700FE53A1 /* RateUs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RateUs.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				940409E61E1CF9A800FE53A1 /* RateUsViewController.swift */,
-				940409E81E1CF9D700FE53A1 /* RateUsStoryboard.storyboard */,
+				940409E81E1CF9D700FE53A1 /* RateUs.storyboard */,
 			);
 			name = RateUs;
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 				940409DC1E1CF3E000FE53A1 /* LaunchScreen.storyboard in Resources */,
 				940409D91E1CF3E000FE53A1 /* Assets.xcassets in Resources */,
 				940409D71E1CF3E000FE53A1 /* Main.storyboard in Resources */,
-				940409E91E1CF9D700FE53A1 /* RateUsStoryboard.storyboard in Resources */,
+				940409E91E1CF9D700FE53A1 /* RateUs.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

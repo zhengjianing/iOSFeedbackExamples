@@ -14,6 +14,8 @@ class FeedbackTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupUI()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,8 +31,14 @@ class FeedbackTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let targetVC = feedbackViewModel.tagetVCForRow(row: indexPath.row)
+        let targetVC = UIStoryboard(name: feedbackViewModel.storyboardNameForRow(row: indexPath.row), bundle: nil).instantiateViewController(withIdentifier: feedbackViewModel.viewControllerIdentifierForRow(row: indexPath.row))
         self.navigationController?.pushViewController(targetVC, animated: true)
+    }
+    
+    private func setupUI() {
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
     }
 
 }

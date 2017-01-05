@@ -12,5 +12,11 @@ class RateUsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupUI()
+    }
+    
+    private func setupUI() {
+        navigationItem.title = "Rate Us"
     }
 }
