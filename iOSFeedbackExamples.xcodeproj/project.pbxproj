@@ -64,7 +64,22 @@
 				940409D51E1CF3E000FE53A1 /* Main.storyboard */,
 				940409D31E1CF3E000FE53A1 /* FeedbackTableViewController.swift */,
 				940409E31E1CF6DB00FE53A1 /* FeedbackViewModel.swift */,
-				940409E51E1CF92A00FE53A1 /* RateUs */,
+				940409E51E1CF92A00FE53A1 /* Rate Us */,
+				940409EA1E1DD8FA00FE53A1 /* Floating Button */,
+				940409EC1E1DD94500FE53A1 /* Negative */,
+				940409EB1E1DD91600FE53A1 /* Reward */,
+				940409ED1E1DD96200FE53A1 /* QRCode */,
+				940409F81E1DDA7600FE53A1 /* Shake to Feedback */,
+				940409F71E1DDA6900FE53A1 /* Friendly Crash */,
+				940409F61E1DDA5A00FE53A1 /* NPS */,
+				940409F51E1DDA4A00FE53A1 /* Instant Message */,
+				940409F41E1DDA1700FE53A1 /* Contact Us */,
+				940409F31E1DD9FD00FE53A1 /* Voice */,
+				940409F21E1DD9EF00FE53A1 /* Long Survey */,
+				940409F11E1DD9D700FE53A1 /* Short Survey */,
+				940409F01E1DD9BD00FE53A1 /* General */,
+				940409EF1E1DD9B000FE53A1 /* FAQ */,
+				940409EE1E1DD96900FE53A1 /* Social Share */,
 				940409D81E1CF3E000FE53A1 /* Assets.xcassets */,
 				940409DA1E1CF3E000FE53A1 /* LaunchScreen.storyboard */,
 				940409DD1E1CF3E000FE53A1 /* Info.plist */,
@@ -72,13 +87,118 @@
 			path = iOSFeedbackExamples;
 			sourceTree = "<group>";
 		};
-		940409E51E1CF92A00FE53A1 /* RateUs */ = {
+		940409E51E1CF92A00FE53A1 /* Rate Us */ = {
 			isa = PBXGroup;
 			children = (
 				940409E61E1CF9A800FE53A1 /* RateUsViewController.swift */,
 				940409E81E1CF9D700FE53A1 /* RateUs.storyboard */,
 			);
-			name = RateUs;
+			name = "Rate Us";
+			sourceTree = "<group>";
+		};
+		940409EA1E1DD8FA00FE53A1 /* Floating Button */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Floating Button";
+			sourceTree = "<group>";
+		};
+		940409EB1E1DD91600FE53A1 /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Reward;
+			sourceTree = "<group>";
+		};
+		940409EC1E1DD94500FE53A1 /* Negative */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Negative;
+			sourceTree = "<group>";
+		};
+		940409ED1E1DD96200FE53A1 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = QRCode;
+			sourceTree = "<group>";
+		};
+		940409EE1E1DD96900FE53A1 /* Social Share */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Social Share";
+			sourceTree = "<group>";
+		};
+		940409EF1E1DD9B000FE53A1 /* FAQ */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FAQ;
+			sourceTree = "<group>";
+		};
+		940409F01E1DD9BD00FE53A1 /* General */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		940409F11E1DD9D700FE53A1 /* Short Survey */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Short Survey";
+			sourceTree = "<group>";
+		};
+		940409F21E1DD9EF00FE53A1 /* Long Survey */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Long Survey";
+			sourceTree = "<group>";
+		};
+		940409F31E1DD9FD00FE53A1 /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Voice;
+			sourceTree = "<group>";
+		};
+		940409F41E1DDA1700FE53A1 /* Contact Us */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Contact Us";
+			sourceTree = "<group>";
+		};
+		940409F51E1DDA4A00FE53A1 /* Instant Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Instant Message";
+			sourceTree = "<group>";
+		};
+		940409F61E1DDA5A00FE53A1 /* NPS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NPS;
+			sourceTree = "<group>";
+		};
+		940409F71E1DDA6900FE53A1 /* Friendly Crash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Friendly Crash";
+			sourceTree = "<group>";
+		};
+		940409F81E1DDA7600FE53A1 /* Shake to Feedback */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Shake to Feedback";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
