@@ -9,23 +9,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Rate Us View Controller-->
-        <scene sceneID="67c-6Z-jy2">
+        <!--Email View Controller-->
+        <scene sceneID="Au8-jf-j5S">
             <objects>
-                <viewController storyboardIdentifier="RateUsViewController" id="L5y-2p-qfF" customClass="RateUsViewController" customModule="iOSFeedbackExamples" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EmailViewController" id="IDc-Kr-Fic" customClass="EmailViewController" customModule="iOSFeedbackExamples" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GRP-st-Get"/>
-                        <viewControllerLayoutGuide type="bottom" id="UNh-9R-B46"/>
+                        <viewControllerLayoutGuide type="top" id="JSd-hT-eLY"/>
+                        <viewControllerLayoutGuide type="bottom" id="6gm-xU-CGl"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3Oz-JC-cuq">
+                    <view key="view" contentMode="scaleToFill" id="tyf-oF-7l9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eY9-bQ-EIr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAv-LC-vSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="418"/>
+            <point key="canvasLocation" x="73" y="134"/>
         </scene>
     </scenes>
 </document>

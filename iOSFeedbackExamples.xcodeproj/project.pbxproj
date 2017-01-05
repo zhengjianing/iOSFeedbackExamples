@@ -18,6 +18,8 @@
 		940409FA1E1DDCEC00FE53A1 /* ShortSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940409F91E1DDCEC00FE53A1 /* ShortSurveyViewController.swift */; };
 		940409FC1E1DDCF800FE53A1 /* ShortSurvey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940409FB1E1DDCF800FE53A1 /* ShortSurvey.storyboard */; };
 		940409FE1E1DEB0E00FE53A1 /* ShortSurveyDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940409FD1E1DEB0E00FE53A1 /* ShortSurveyDetailTableViewController.swift */; };
+		94040A011E1DF75600FE53A1 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94040A001E1DF75600FE53A1 /* EmailViewController.swift */; };
+		94040A031E1DF77300FE53A1 /* Email.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94040A021E1DF77300FE53A1 /* Email.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		940409F91E1DDCEC00FE53A1 /* ShortSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortSurveyViewController.swift; sourceTree = "<group>"; };
 		940409FB1E1DDCF800FE53A1 /* ShortSurvey.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShortSurvey.storyboard; sourceTree = "<group>"; };
 		940409FD1E1DEB0E00FE53A1 /* ShortSurveyDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortSurveyDetailTableViewController.swift; sourceTree = "<group>"; };
+		94040A001E1DF75600FE53A1 /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		94040A021E1DF77300FE53A1 /* Email.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Email.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +74,11 @@
 				940409D51E1CF3E000FE53A1 /* Main.storyboard */,
 				940409D31E1CF3E000FE53A1 /* FeedbackTableViewController.swift */,
 				940409E31E1CF6DB00FE53A1 /* FeedbackViewModel.swift */,
+				940409FF1E1DF6E900FE53A1 /* Email */,
 				940409E51E1CF92A00FE53A1 /* Rate Us */,
+				940409F11E1DD9D700FE53A1 /* Short Survey */,
 				940409EC1E1DD94500FE53A1 /* Negative */,
 				940409EB1E1DD91600FE53A1 /* Reward */,
-				940409F11E1DD9D700FE53A1 /* Short Survey */,
 				940409F21E1DD9EF00FE53A1 /* Long Survey */,
 				940409EA1E1DD8FA00FE53A1 /* Floating Button */,
 				940409ED1E1DD96200FE53A1 /* QRCode */,
@@ -210,6 +215,15 @@
 			name = "Shake to Feedback";
 			sourceTree = "<group>";
 		};
+		940409FF1E1DF6E900FE53A1 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				94040A001E1DF75600FE53A1 /* EmailViewController.swift */,
+				94040A021E1DF77300FE53A1 /* Email.storyboard */,
+			);
+			name = Email;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -272,6 +286,7 @@
 				940409DC1E1CF3E000FE53A1 /* LaunchScreen.storyboard in Resources */,
 				940409D91E1CF3E000FE53A1 /* Assets.xcassets in Resources */,
 				940409D71E1CF3E000FE53A1 /* Main.storyboard in Resources */,
+				94040A031E1DF77300FE53A1 /* Email.storyboard in Resources */,
 				940409E91E1CF9D700FE53A1 /* RateUs.storyboard in Resources */,
 				940409FC1E1DDCF800FE53A1 /* ShortSurvey.storyboard in Resources */,
 			);
@@ -289,6 +304,7 @@
 				940409E71E1CF9A800FE53A1 /* RateUsViewController.swift in Sources */,
 				940409D41E1CF3E000FE53A1 /* FeedbackTableViewController.swift in Sources */,
 				940409D21E1CF3E000FE53A1 /* AppDelegate.swift in Sources */,
+				94040A011E1DF75600FE53A1 /* EmailViewController.swift in Sources */,
 				940409E41E1CF6DB00FE53A1 /* FeedbackViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
