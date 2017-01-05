@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Floating Button View Controller-->
+        <scene sceneID="1fS-I2-8pb">
+            <objects>
+                <viewController storyboardIdentifier="FloatingButtonViewController" id="5ku-xD-Cna" customClass="FloatingButtonViewController" customModule="iOSFeedbackExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dtr-SU-TNK"/>
+                        <viewControllerLayoutGuide type="bottom" id="gXy-jE-ZhG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="08t-FP-I1j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylS-Np-8lv">
+                                <rect key="frame" x="16" y="40" width="343" height="607"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfQ-f8-zMf">
+                                <rect key="frame" x="243" y="599" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.094117647060000004" green="0.47450980390000003" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Feedback">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="lUd-y0-Wxi" appends="YES" id="XHp-FB-16r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="gXy-jE-ZhG" firstAttribute="top" secondItem="ylS-Np-8lv" secondAttribute="bottom" constant="20" id="1eT-mJ-DnM"/>
+                            <constraint firstItem="ylS-Np-8lv" firstAttribute="leading" secondItem="08t-FP-I1j" secondAttribute="leadingMargin" id="8SW-E3-IwP"/>
+                            <constraint firstItem="ylS-Np-8lv" firstAttribute="top" secondItem="dtr-SU-TNK" secondAttribute="bottom" constant="20" id="MRD-Gv-GEQ"/>
+                            <constraint firstItem="ylS-Np-8lv" firstAttribute="trailing" secondItem="08t-FP-I1j" secondAttribute="trailingMargin" id="eUN-wc-CzI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundTextLabel" destination="ylS-Np-8lv" id="7dg-rI-NLS"/>
+                        <outlet property="feedbackButton" destination="SfQ-f8-zMf" id="2Wc-8X-LUT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xjn-FM-Svz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="lUd-y0-Wxi">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="5ku-xD-Cna" id="Ab7-vf-vEc"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-76" y="-225.33733133433284"/>
+        </scene>
+    </scenes>
+</document>
