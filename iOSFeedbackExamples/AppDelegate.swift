@@ -41,6 +41,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        //从Safari/APP打开本项目
+//        if url.scheme == "iOSFeedbackExamples"  {
+//            //进入详情页
+//            if url.host == "com.iOSFeedbackExamples"  {
+//                if (url.query?.hasPrefix("shortsurveydetail"))! {
+        if url.host == nil {
+            return true;
+        }
+        
+        if let queryUrl = url.query {
+            if queryUrl == "ShortSurveyDetailTableViewController" {
+                window?.rootViewController?.present(ShortSurveyViewController(),
+                                                    animated: true,
+                                                    completion: nil)
+            }
+        }
+        return true
+    }
 
 }
 
