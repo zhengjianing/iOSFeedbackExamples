@@ -39,8 +39,8 @@ class RateUsViewController: UIViewController {
             self.todoAction()
         }
         alertController.addAction(rate)
-        alertController.addAction(cancel)
         alertController.addAction(later)
+        alertController.addAction(cancel)
         self.navigationController?.present(alertController, animated: true, completion: nil)
     }
     
