@@ -17,7 +17,7 @@ platform :ios do
       gym(
         configuration: "Release",
         scheme: "iOSFeedbackExamples",
-        sdk: "iphoneos10.0",
+        sdk: "iphoneos10.1",
         clean: true,
         include_bitcode: false,
         include_symbols: true,
