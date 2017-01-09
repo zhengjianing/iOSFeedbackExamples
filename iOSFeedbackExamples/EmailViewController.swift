@@ -28,15 +28,14 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
         } else {
             self.showSendMailErrorAlert()
         }
-
     }
     
     // delegate
     func mailComposeController(_ controller: MFMailComposeViewController,
                                didFinishWith result: MFMailComposeResult,
                                error: Error?) {
-        self.navigationController?.dismiss(animated: true, completion: nil)
-        
+        self.dismiss(animated: true, completion: nil)
+        _ = self.navigationController?.popToRootViewController(animated: true)
     }
 
     func configuredMailComposeViewController() -> MFMailComposeViewController {
@@ -48,25 +47,12 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
         let systemVersion = UIDevice.current.systemVersion
         // 获取设备的型号
         let deviceModel = UIDevice.current.model
-        // 获取设备名称
-//        let deviceName = UIDevice.current.name
-        // 获取设备唯一标识符
-//        let deviceUUID = UIDevice.current.identifierForVendor?.uuidString
-        // 获取app相关信息
-//        let infoDic = Bundle.main.infoDictionary
-        // 获取App的版本号
-//        let appVersion = infoDic?["CFBundleShortVersionString"]
-        // 获取App的build版本
-//        let appBuildVersion = infoDic?["CFBundleVersion"]
-        // 获取App的名称
-//        let appName = infoDic?["CFBundleDisplayName"]
-        
         // 设置收件地址
         mailComposeVC.setToRecipients(["1038875231@qq.com"])
         // 设置邮件主题
-        mailComposeVC.setSubject("<邮件主题>")
+        mailComposeVC.setSubject("提交反馈")
         // 设置邮件正文
-        mailComposeVC.setMessageBody("\\\\n\\\\n\\\\n系统版本：\(systemVersion)\\\\n设备型号：\(deviceModel)", isHTML: false)
+        mailComposeVC.setMessageBody("请填写您的建议, 我们将尽快处理:\n\n\n\n\n\n系统版本：\(systemVersion)\n设备型号：\(deviceModel)", isHTML: false)
         
         return mailComposeVC
     }
@@ -88,9 +74,11 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
     }
     func gotoSettingPage() {
         // 跳转icloud设置页面
-        let settingUrl = URL(string: "root=CASTLE ")!
+        let settingUrl = URL(string: UIApplicationOpenSettingsURLString)!
         if UIApplication.shared.canOpenURL(settingUrl) {
             UIApplication.shared.openURL(settingUrl)
+        } else {
+            print("can't open url")
         }
     }
 }
