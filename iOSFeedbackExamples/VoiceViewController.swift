@@ -20,7 +20,7 @@ class VoiceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "摇一摇 & 语言"
+        navigationItem.title = "摇一摇 & 语音"
         tipsLabel.text = "可以通过“摇一摇”手机来截屏，并在图上标注，同时支持语音反馈。反馈内容会发送反馈至蒲公英后台。"
         
         //Move this to AppDelegate if you want to make this work globally

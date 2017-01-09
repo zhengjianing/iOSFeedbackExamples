@@ -17,7 +17,7 @@ struct FeedbackViewModel {
         ("Rate us on the AppStore", "RateUs", "RateUsViewController"),
         ("Short Survey", "ShortSurvey", "ShortSurveyViewController"),
         ("Floating Button", "FloatingButton", "FloatingButtonViewController"),
-        ("Voice & Shake", "Voice", "VoiceViewController")]
+        ("Voice & Shake(蒲公英SDK)", "Voice", "VoiceViewController")]
     
     func numberOfRows() -> Int {
         return feedbacks.count
