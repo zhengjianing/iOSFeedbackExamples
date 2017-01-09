@@ -15,7 +15,7 @@ class VoiceViewController: UIViewController {
     // 蒲公英后台APP管理界面地址：https://www.pgyer.com/manager/dashboard/app/11f1a16e8bd916773bf116b1e479590f
     // 蒲公英SDK文档中心：https://www.pgyer.com/doc/view/sdk_ios_guide
     
-    let PgyAppID = "11f1a16e8bd916773bf116b1e479590f"
+    let PgyAppID = "30f52a342978b5a981f21bd580660f8f"
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,0 +1,46 @@
+
+fastlane_version "2.6.0"
+
+default_platform :ios
+
+platform :ios do
+
+  desc "Build for ad-hoc"
+    lane :build do
+      match(
+        git_url: "git@bitbucket.org:zhjn861112/iosfeedbackcertificates.git",
+        type: "adhoc",
+        app_identifier: "com.jnzheng.iOSFeedbackExamples",
+        readonly: true,
+        force_for_new_devices: true
+      )
+      gym(
+        configuration: "Release",
+        scheme: "iOSFeedbackExamples",
+        sdk: "iphoneos10.0",
+        clean: true,
+        include_bitcode: false,
+        include_symbols: true,
+        export_method: "ad-hoc"
+      )
+    end
+
+    desc "Deploy beta to hockeyapp"
+    lane :deploy_beta do
+
+    end
+
+    desc "Test, build and deploy beta to hockeyapp"
+    lane :beta do
+      build
+      deploy_beta
+    end
+
+end
+
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
+# All available actions: https://docs.fastlane.tools/actions
+
+# fastlane reports which actions are used
+# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer
