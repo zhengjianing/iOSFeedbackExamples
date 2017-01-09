@@ -31,16 +31,10 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
 
     }
     
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        print("result.rawValue: \(result.rawValue)")
-//        switch result.rawValue {
-//        case MFMailComposeError.rawValue:
-//            print("取消发送")
-//        case MFMailComposeErrorDomain.rawValue:
-//            print("发送成功")
-//        default:
-//            break
-//        }
+    // delegate
+    func mailComposeController(_ controller: MFMailComposeViewController,
+                               didFinishWith result: MFMailComposeResult,
+                               error: Error?) {
         self.navigationController?.dismiss(animated: true, completion: nil)
         
     }
@@ -67,9 +61,11 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
         // 获取App的名称
 //        let appName = infoDic?["CFBundleDisplayName"]
         
-        //设置邮件地址、主题及正文
+        // 设置收件地址
         mailComposeVC.setToRecipients(["1038875231@qq.com"])
+        // 设置邮件主题
         mailComposeVC.setSubject("<邮件主题>")
+        // 设置邮件正文
         mailComposeVC.setMessageBody("\\\\n\\\\n\\\\n系统版本：\(systemVersion)\\\\n设备型号：\(deviceModel)", isHTML: false)
         
         return mailComposeVC
@@ -90,9 +86,9 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
         })
         self.present(sendMailErrorAlert, animated: true, completion: nil)
     }
-    // 跳转相关设置页面
     func gotoSettingPage() {
-        let settingUrl = URL(string: UIApplicationOpenSettingsURLString)!
+        // 跳转icloud设置页面
+        let settingUrl = URL(string: "root=CASTLE ")!
         if UIApplication.shared.canOpenURL(settingUrl) {
             UIApplication.shared.openURL(settingUrl)
         }

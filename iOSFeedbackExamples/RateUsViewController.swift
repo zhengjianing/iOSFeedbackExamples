@@ -45,13 +45,14 @@ class RateUsViewController: UIViewController {
     }
     
     func gotoAppStore() {
-        let url = "itms-apps://update"
+        // QQ邮箱评论页
+        let url = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=473225145"
         // 确认手机是否安装将要打开的app
         if let url = URL(string: url), UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.openURL(url)
             // 没有安装时跳转appStore下载界面
         } else {
-            let appString = "https://itunes.apple.com/cn/app/应用的scheme/id473225145?mt=8"
+            let appString = "https://itunes.apple.com/cn/app/id473225145?mt=8"
             let appUrl = URL(string: appString)
             print(appUrl ?? "打开本app在appStore中的下载页面")
         }
