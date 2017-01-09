@@ -49,7 +49,11 @@ class RateUsViewController: UIViewController {
         let url = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=473225145"
         // 确认手机是否安装将要打开的app
         if let url = URL(string: url), UIApplication.shared.canOpenURL(url) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
             // 没有安装时跳转appStore下载界面
         } else {
             let appString = "https://itunes.apple.com/cn/app/id473225145?mt=8"
