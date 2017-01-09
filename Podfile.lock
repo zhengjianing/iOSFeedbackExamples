@@ -1,0 +1,15 @@
+PODS:
+  - Pgyer (2.8.4)
+  - PgyUpdate (1.2)
+
+DEPENDENCIES:
+  - Pgyer
+  - PgyUpdate
+
+SPEC CHECKSUMS:
+  Pgyer: 26edfcc8da6da6383fabfdbccd2f77c623b9d6eb
+  PgyUpdate: a42e82cec5ad4e992af390e9d494f6fc62db65e4
+
+PODFILE CHECKSUM: 3474ce4df07f359cfc0b9f1e33daaa6237ccb0a3
+
+COCOAPODS: 1.0.1

@@ -22,9 +22,19 @@
 		94040A031E1DF77300FE53A1 /* Email.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94040A021E1DF77300FE53A1 /* Email.storyboard */; };
 		94040A051E1DF82400FE53A1 /* FloatingButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94040A041E1DF82400FE53A1 /* FloatingButtonViewController.swift */; };
 		94040A071E1DF83500FE53A1 /* FloatingButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94040A061E1DF83500FE53A1 /* FloatingButton.storyboard */; };
+		9494395F1E232D4E00962D02 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9494395E1E232D4E00962D02 /* CoreTelephony.framework */; };
+		949439611E232D5400962D02 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949439601E232D5400962D02 /* OpenGLES.framework */; };
+		949439631E232D5B00962D02 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949439621E232D5B00962D02 /* CoreMotion.framework */; };
+		949439651E232D6400962D02 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949439641E232D6400962D02 /* AudioToolbox.framework */; };
+		949439671E232D6B00962D02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949439661E232D6B00962D02 /* AVFoundation.framework */; };
+		949439691E232D7300962D02 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949439681E232D7300962D02 /* SystemConfiguration.framework */; };
+		9494396B1E232D8700962D02 /* PgySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9494396A1E232D8700962D02 /* PgySDK.framework */; };
+		CB65FD235CE4EDBDFD8225CF /* Pods_iOSFeedbackExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7D907D8D4DC119630AF1A7 /* Pods_iOSFeedbackExamples.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F7D907D8D4DC119630AF1A7 /* Pods_iOSFeedbackExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSFeedbackExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B812E063AE6629E25205F48 /* Pods-iOSFeedbackExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSFeedbackExamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSFeedbackExamples/Pods-iOSFeedbackExamples.release.xcconfig"; sourceTree = "<group>"; };
 		940409CE1E1CF3E000FE53A1 /* iOSFeedbackExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFeedbackExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		940409D11E1CF3E000FE53A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		940409D31E1CF3E000FE53A1 /* FeedbackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackTableViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +52,14 @@
 		94040A021E1DF77300FE53A1 /* Email.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Email.storyboard; sourceTree = "<group>"; };
 		94040A041E1DF82400FE53A1 /* FloatingButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingButtonViewController.swift; sourceTree = "<group>"; };
 		94040A061E1DF83500FE53A1 /* FloatingButton.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FloatingButton.storyboard; sourceTree = "<group>"; };
+		9494395E1E232D4E00962D02 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		949439601E232D5400962D02 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		949439621E232D5B00962D02 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		949439641E232D6400962D02 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		949439661E232D6B00962D02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		949439681E232D7300962D02 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9494396A1E232D8700962D02 /* PgySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PgySDK.framework; path = Pods/Pgyer/PgySDK/sdk/PgySDK.framework; sourceTree = "<group>"; };
+		DAD594C696D322654E02C299 /* Pods-iOSFeedbackExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSFeedbackExamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSFeedbackExamples/Pods-iOSFeedbackExamples.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +67,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9494396B1E232D8700962D02 /* PgySDK.framework in Frameworks */,
+				949439691E232D7300962D02 /* SystemConfiguration.framework in Frameworks */,
+				949439671E232D6B00962D02 /* AVFoundation.framework in Frameworks */,
+				949439651E232D6400962D02 /* AudioToolbox.framework in Frameworks */,
+				949439631E232D5B00962D02 /* CoreMotion.framework in Frameworks */,
+				949439611E232D5400962D02 /* OpenGLES.framework in Frameworks */,
+				9494395F1E232D4E00962D02 /* CoreTelephony.framework in Frameworks */,
+				CB65FD235CE4EDBDFD8225CF /* Pods_iOSFeedbackExamples.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0448E541764396E0C2EA983D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAD594C696D322654E02C299 /* Pods-iOSFeedbackExamples.debug.xcconfig */,
+				4B812E063AE6629E25205F48 /* Pods-iOSFeedbackExamples.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		940409C51E1CF3DF00FE53A1 = {
 			isa = PBXGroup;
 			children = (
 				940409D01E1CF3E000FE53A1 /* iOSFeedbackExamples */,
 				940409CF1E1CF3E000FE53A1 /* Products */,
+				0448E541764396E0C2EA983D /* Pods */,
+				D5F0067073430C64BE26861F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,6 +275,21 @@
 			name = "Pin Button";
 			sourceTree = "<group>";
 		};
+		D5F0067073430C64BE26861F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9494396A1E232D8700962D02 /* PgySDK.framework */,
+				949439681E232D7300962D02 /* SystemConfiguration.framework */,
+				949439661E232D6B00962D02 /* AVFoundation.framework */,
+				949439641E232D6400962D02 /* AudioToolbox.framework */,
+				949439621E232D5B00962D02 /* CoreMotion.framework */,
+				949439601E232D5400962D02 /* OpenGLES.framework */,
+				9494395E1E232D4E00962D02 /* CoreTelephony.framework */,
+				2F7D907D8D4DC119630AF1A7 /* Pods_iOSFeedbackExamples.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -245,9 +297,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 940409E01E1CF3E000FE53A1 /* Build configuration list for PBXNativeTarget "iOSFeedbackExamples" */;
 			buildPhases = (
+				1FA8272965A49DBB4EB3EB80 /* [CP] Check Pods Manifest.lock */,
 				940409CA1E1CF3DF00FE53A1 /* Sources */,
 				940409CB1E1CF3DF00FE53A1 /* Frameworks */,
 				940409CC1E1CF3DF00FE53A1 /* Resources */,
+				9E120256358FC3FBDD36ACFE /* [CP] Embed Pods Frameworks */,
+				69ACF4A92FF6387D515A2BE9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,6 +363,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FA8272965A49DBB4EB3EB80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69ACF4A92FF6387D515A2BE9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSFeedbackExamples/Pods-iOSFeedbackExamples-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E120256358FC3FBDD36ACFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSFeedbackExamples/Pods-iOSFeedbackExamples-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		940409CA1E1CF3DF00FE53A1 /* Sources */ = {
@@ -442,8 +545,13 @@
 		};
 		940409E11E1CF3E000FE53A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD594C696D322654E02C299 /* Pods-iOSFeedbackExamples.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Pgyer/PgySDK/sdk",
+				);
 				INFOPLIST_FILE = iOSFeedbackExamples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tw.jnzheng.iOSFeedbackExamples;
@@ -454,8 +562,13 @@
 		};
 		940409E21E1CF3E000FE53A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B812E063AE6629E25205F48 /* Pods-iOSFeedbackExamples.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Pgyer/PgySDK/sdk",
+				);
 				INFOPLIST_FILE = iOSFeedbackExamples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tw.jnzheng.iOSFeedbackExamples;
@@ -483,6 +596,7 @@
 				940409E21E1CF3E000FE53A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
