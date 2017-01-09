@@ -42,7 +42,6 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
         
         let mailComposeVC = MFMailComposeViewController()
         mailComposeVC.mailComposeDelegate = self
-        
         // 获取系统版本号
         let systemVersion = UIDevice.current.systemVersion
         // 获取设备的型号
