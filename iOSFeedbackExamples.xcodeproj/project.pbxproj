@@ -22,6 +22,8 @@
 		94040A031E1DF77300FE53A1 /* Email.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94040A021E1DF77300FE53A1 /* Email.storyboard */; };
 		94040A051E1DF82400FE53A1 /* FloatingButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94040A041E1DF82400FE53A1 /* FloatingButtonViewController.swift */; };
 		94040A071E1DF83500FE53A1 /* FloatingButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94040A061E1DF83500FE53A1 /* FloatingButton.storyboard */; };
+		942C4CA31E24B02F00999D81 /* EasemobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942C4CA21E24B02F00999D81 /* EasemobViewController.swift */; };
+		942C4CA61E24B08900999D81 /* LeancloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942C4CA51E24B08900999D81 /* LeancloudViewController.swift */; };
 		9494395F1E232D4E00962D02 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9494395E1E232D4E00962D02 /* CoreTelephony.framework */; };
 		949439611E232D5400962D02 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949439601E232D5400962D02 /* OpenGLES.framework */; };
 		949439631E232D5B00962D02 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949439621E232D5B00962D02 /* CoreMotion.framework */; };
@@ -54,6 +56,8 @@
 		94040A021E1DF77300FE53A1 /* Email.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Email.storyboard; sourceTree = "<group>"; };
 		94040A041E1DF82400FE53A1 /* FloatingButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingButtonViewController.swift; sourceTree = "<group>"; };
 		94040A061E1DF83500FE53A1 /* FloatingButton.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FloatingButton.storyboard; sourceTree = "<group>"; };
+		942C4CA21E24B02F00999D81 /* EasemobViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasemobViewController.swift; sourceTree = "<group>"; };
+		942C4CA51E24B08900999D81 /* LeancloudViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeancloudViewController.swift; sourceTree = "<group>"; };
 		9494395E1E232D4E00962D02 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		949439601E232D5400962D02 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		949439621E232D5B00962D02 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -130,7 +134,8 @@
 				940409EB1E1DD91600FE53A1 /* Reward */,
 				940409F21E1DD9EF00FE53A1 /* Long Survey */,
 				940409ED1E1DD96200FE53A1 /* QRCode */,
-				940409F81E1DDA7600FE53A1 /* Shake to Feedback */,
+				942C4CA41E24B07500999D81 /* Leancloud */,
+				940409F81E1DDA7600FE53A1 /* Easemob */,
 				940409F71E1DDA6900FE53A1 /* Friendly Crash */,
 				940409F61E1DDA5A00FE53A1 /* NPS */,
 				940409F51E1DDA4A00FE53A1 /* Instant Message */,
@@ -260,11 +265,12 @@
 			name = "Friendly Crash";
 			sourceTree = "<group>";
 		};
-		940409F81E1DDA7600FE53A1 /* Shake to Feedback */ = {
+		940409F81E1DDA7600FE53A1 /* Easemob */ = {
 			isa = PBXGroup;
 			children = (
+				942C4CA21E24B02F00999D81 /* EasemobViewController.swift */,
 			);
-			name = "Shake to Feedback";
+			name = Easemob;
 			sourceTree = "<group>";
 		};
 		940409FF1E1DF6E900FE53A1 /* Email */ = {
@@ -281,6 +287,14 @@
 			children = (
 			);
 			name = "Pin Button";
+			sourceTree = "<group>";
+		};
+		942C4CA41E24B07500999D81 /* Leancloud */ = {
+			isa = PBXGroup;
+			children = (
+				942C4CA51E24B08900999D81 /* LeancloudViewController.swift */,
+			);
+			name = Leancloud;
 			sourceTree = "<group>";
 		};
 		D5F0067073430C64BE26861F /* Frameworks */ = {
@@ -431,11 +445,13 @@
 				940409FA1E1DDCEC00FE53A1 /* ShortSurveyViewController.swift in Sources */,
 				940409FE1E1DEB0E00FE53A1 /* ShortSurveyDetailTableViewController.swift in Sources */,
 				940409E71E1CF9A800FE53A1 /* RateUsViewController.swift in Sources */,
+				942C4CA31E24B02F00999D81 /* EasemobViewController.swift in Sources */,
 				940409D41E1CF3E000FE53A1 /* FeedbackTableViewController.swift in Sources */,
 				94040A051E1DF82400FE53A1 /* FloatingButtonViewController.swift in Sources */,
 				9494396D1E232DC100962D02 /* VoiceViewController.swift in Sources */,
 				940409D21E1CF3E000FE53A1 /* AppDelegate.swift in Sources */,
 				94040A011E1DF75600FE53A1 /* EmailViewController.swift in Sources */,
+				942C4CA61E24B08900999D81 /* LeancloudViewController.swift in Sources */,
 				940409E41E1CF6DB00FE53A1 /* FeedbackViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
