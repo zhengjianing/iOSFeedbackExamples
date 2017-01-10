@@ -10,11 +10,11 @@ import Foundation
 
 struct RateUsViewModel {
     
-    let naviTitle = "Rate Us"
-    let alertTitle = "Rate us on the AppStore"
-    let alertMessage = "Any kinds of advice is appreciated"
-    let rateBtnTitle = "Rate AppStore"
-    let laterBtnTitle = "Remind me later"
-    let cancleBtnTitle = "No,Thanks"
-    let qqMailUrl = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=473225145"
+    let naviTitle       = "Rate Us"
+    let alertTitle      = "Rate us on the AppStore"
+    let alertMessage    = "Any kinds of advice is appreciated"
+    let rateBtnTitle    = "Rate AppStore"
+    let laterBtnTitle   = "Remind me later"
+    let cancleBtnTitle  = "No,Thanks"
+    let qqMailUrl       = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=473225145"
 }
