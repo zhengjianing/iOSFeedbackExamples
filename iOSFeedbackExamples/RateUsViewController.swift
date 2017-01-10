@@ -43,9 +43,6 @@ class RateUsViewController: UIViewController {
         alertController.addAction(cancel)
         self.present(alertController, animated: true, completion: nil)
     }
-    override func viewDidAppear(_ animated: Bool) {
-        
-    }
     
     func gotoAppStore() {
         // 确认手机是否安装目标app
