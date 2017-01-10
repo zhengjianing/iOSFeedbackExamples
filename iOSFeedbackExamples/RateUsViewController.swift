@@ -10,7 +10,7 @@ import UIKit
 
 class RateUsViewController: UIViewController {
     
-    let feedbackViewModel = FeedbackViewModel()
+    let rateViewModel = RateUsViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,37 +18,38 @@ class RateUsViewController: UIViewController {
         setupUI()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    @IBAction func rateAction(_ sender: UIButton) {
         // 提示controller
-        let alertController = UIAlertController(title: feedbackViewModel.feedbacks[1].0,
-                                                message: "Any kinds of advice is appreciated",
+        let alertController = UIAlertController(title: rateViewModel.alertTitle,
+                                                message: rateViewModel.alertMessage,
                                                 preferredStyle: .alert)
         // 立即评论
-        let rate = UIAlertAction(title: "Rate AppStore", style: .default) {
+        let rate = UIAlertAction(title: rateViewModel.rateBtnTitle, style: .default) {
             action in
             self.gotoAppStore()
         }
         // 暂不评价
-        let later = UIAlertAction(title: "Remind me later", style: .default) {
+        let later = UIAlertAction(title: rateViewModel.laterBtnTitle, style: .default) {
             action in
             self.todoAction()
         }
         // 不再提醒
-        let cancel = UIAlertAction(title: "No,Thanks", style: .cancel) {
+        let cancel = UIAlertAction(title: rateViewModel.cancleBtnTitle, style: .cancel) {
             action in
             self.todoAction()
         }
         alertController.addAction(rate)
         alertController.addAction(later)
         alertController.addAction(cancel)
-        self.navigationController?.present(alertController, animated: true, completion: nil)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        
     }
     
     func gotoAppStore() {
-        // QQ邮箱评论页
-        let url = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=473225145"
         // 确认手机是否安装目标app
-        if let url = URL(string: url), UIApplication.shared.canOpenURL(url) {
+        if let url = URL(string: rateViewModel.qqMailUrl), UIApplication.shared.canOpenURL(url) {
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             } else {
@@ -61,10 +62,11 @@ class RateUsViewController: UIViewController {
     }
     
     func todoAction() {
-        _ = self.navigationController?.popToRootViewController(animated: true)
+        print("暂时没有额外的操作, 将回到刚才的页面")
+        self.dismiss(animated: true, completion: nil)
     }
     
     private func setupUI() {
-        navigationItem.title = "Rate Us"
+        navigationItem.title = rateViewModel.naviTitle
     }
 }
