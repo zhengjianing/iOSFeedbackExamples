@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C8A46821E24A53B003C7D39 /* RateUsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8A46811E24A53B003C7D39 /* RateUsViewModel.swift */; };
 		940409D21E1CF3E000FE53A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940409D11E1CF3E000FE53A1 /* AppDelegate.swift */; };
 		940409D41E1CF3E000FE53A1 /* FeedbackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940409D31E1CF3E000FE53A1 /* FeedbackTableViewController.swift */; };
 		940409D71E1CF3E000FE53A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940409D51E1CF3E000FE53A1 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C8A46811E24A53B003C7D39 /* RateUsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateUsViewModel.swift; sourceTree = "<group>"; };
 		2F7D907D8D4DC119630AF1A7 /* Pods_iOSFeedbackExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSFeedbackExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B812E063AE6629E25205F48 /* Pods-iOSFeedbackExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSFeedbackExamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSFeedbackExamples/Pods-iOSFeedbackExamples.release.xcconfig"; sourceTree = "<group>"; };
 		940409CE1E1CF3E000FE53A1 /* iOSFeedbackExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFeedbackExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				940409E61E1CF9A800FE53A1 /* RateUsViewController.swift */,
+				0C8A46811E24A53B003C7D39 /* RateUsViewModel.swift */,
 				940409E81E1CF9D700FE53A1 /* RateUs.storyboard */,
 			);
 			name = "Rate Us";
@@ -447,6 +450,7 @@
 				940409E71E1CF9A800FE53A1 /* RateUsViewController.swift in Sources */,
 				942C4CA31E24B02F00999D81 /* EasemobViewController.swift in Sources */,
 				940409D41E1CF3E000FE53A1 /* FeedbackTableViewController.swift in Sources */,
+				0C8A46821E24A53B003C7D39 /* RateUsViewModel.swift in Sources */,
 				94040A051E1DF82400FE53A1 /* FloatingButtonViewController.swift in Sources */,
 				9494396D1E232DC100962D02 /* VoiceViewController.swift in Sources */,
 				940409D21E1CF3E000FE53A1 /* AppDelegate.swift in Sources */,
