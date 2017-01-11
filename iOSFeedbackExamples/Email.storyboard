@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,12 +19,34 @@
                     <view key="view" contentMode="scaleToFill" id="tyf-oF-7l9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击下方的按钮跳转到邮件发送页面, 可以通过邮件的方式收集用户反馈" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvP-QS-H8I">
+                                <rect key="frame" x="30" y="100" width="315" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTt-o0-dZD">
+                                <rect key="frame" x="127.5" y="173.5" width="119" height="30"/>
+                                <state key="normal" title="Send Us an Email"/>
+                                <connections>
+                                    <action selector="sendEmailAction:" destination="IDc-Kr-Fic" eventType="touchUpInside" id="EPH-xo-A7Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DTt-o0-dZD" firstAttribute="top" secondItem="cvP-QS-H8I" secondAttribute="bottom" constant="40" id="1tc-kP-K8Z"/>
+                            <constraint firstItem="cvP-QS-H8I" firstAttribute="leading" secondItem="tyf-oF-7l9" secondAttribute="leading" constant="30" id="U7J-3N-gHP"/>
+                            <constraint firstAttribute="trailing" secondItem="cvP-QS-H8I" secondAttribute="trailing" constant="30" id="dWw-rc-icS"/>
+                            <constraint firstItem="DTt-o0-dZD" firstAttribute="centerX" secondItem="cvP-QS-H8I" secondAttribute="centerX" id="lwp-gy-XkC"/>
+                            <constraint firstItem="cvP-QS-H8I" firstAttribute="top" secondItem="tyf-oF-7l9" secondAttribute="top" constant="100" id="xj0-KT-3vR"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAv-LC-vSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="73" y="134"/>
+            <point key="canvasLocation" x="72.799999999999997" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

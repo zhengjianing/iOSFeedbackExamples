@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pin Button View Controller-->
+        <scene sceneID="Ac9-q8-PP6">
+            <objects>
+                <viewController storyboardIdentifier="PinButtonViewController" id="n1d-Cz-ZaP" customClass="PinButtonViewController" customModule="iOSFeedbackExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1dD-eF-ONR"/>
+                        <viewControllerLayoutGuide type="bottom" id="B2K-d0-eOo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sbc-EF-VyP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRs-Ad-3vl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="屏幕下方的按钮是一个pinButton, 它不会随着屏幕的滑动而滑动" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feq-9p-LtD">
+                                        <rect key="frame" x="10" y="97" width="355" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="FjU-Ov-a5R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="feq-9p-LtD" secondAttribute="bottom" constant="470" id="8ZW-cC-Nfa"/>
+                                    <constraint firstAttribute="trailing" secondItem="feq-9p-LtD" secondAttribute="trailing" constant="10" id="STX-Un-2Hq"/>
+                                    <constraint firstItem="feq-9p-LtD" firstAttribute="top" secondItem="eRs-Ad-3vl" secondAttribute="top" constant="97" id="Yg3-78-hRh"/>
+                                    <constraint firstItem="feq-9p-LtD" firstAttribute="centerX" secondItem="eRs-Ad-3vl" secondAttribute="centerX" id="tIe-a8-dcj"/>
+                                    <constraint firstItem="feq-9p-LtD" firstAttribute="leading" secondItem="eRs-Ad-3vl" secondAttribute="leading" constant="10" id="xxN-9W-Mmu"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eRs-Ad-3vl" firstAttribute="leading" secondItem="Sbc-EF-VyP" secondAttribute="leading" id="Db1-bf-EuO"/>
+                            <constraint firstAttribute="trailing" secondItem="eRs-Ad-3vl" secondAttribute="trailing" id="Q0G-nh-ZLL"/>
+                            <constraint firstItem="B2K-d0-eOo" firstAttribute="top" secondItem="eRs-Ad-3vl" secondAttribute="bottom" id="eBM-PF-Rfa"/>
+                            <constraint firstItem="eRs-Ad-3vl" firstAttribute="top" secondItem="Sbc-EF-VyP" secondAttribute="top" id="sjt-Vg-jhs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="eRs-Ad-3vl" id="vvK-3L-WEB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p5b-ZM-Lln" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-122" y="289"/>
+        </scene>
+    </scenes>
+</document>
