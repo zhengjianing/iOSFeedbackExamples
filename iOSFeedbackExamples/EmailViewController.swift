@@ -64,14 +64,16 @@ class EmailViewController: UIViewController, MFMailComposeViewControllerDelegate
         let sendMailErrorAlert = UIAlertController(title: "无法发送邮件",
                                                    message: "您的设备尚未设置邮箱，请在“邮件”应用中设置后再尝试发送。",
                                                    preferredStyle: .alert)
-        sendMailErrorAlert.addAction(UIAlertAction(title: "取消", style: .cancel) {
-            (actin: UIAlertAction) in
+        let cancel = UIAlertAction(title: "取消", style: .cancel) {
+            action in
             self.dismiss(animated: true, completion: nil)
-        })
-        sendMailErrorAlert.addAction(UIAlertAction(title: "去设置", style: .default) {
-            (actin: UIAlertAction) in
+        }
+        let setting = UIAlertAction(title: "去设置", style: .default) {
+            action in
             self.gotoSettingPage()
-        })
+        }
+        sendMailErrorAlert.addAction(cancel)
+        sendMailErrorAlert.addAction(setting)
         self.present(sendMailErrorAlert, animated: true, completion: nil)
     }
     func gotoSettingPage() {
