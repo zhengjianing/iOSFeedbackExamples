@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C204C411E25BA9A008BF2B8 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C204C401E25BA9A008BF2B8 /* UIDeviceExtension.swift */; };
 		0C8A46821E24A53B003C7D39 /* RateUsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8A46811E24A53B003C7D39 /* RateUsViewModel.swift */; };
 		0C8A46891E2526A4003C7D39 /* PinButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8A46871E2526A4003C7D39 /* PinButtonViewController.swift */; };
 		0C8A468A1E2526A4003C7D39 /* PinButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8A46881E2526A4003C7D39 /* PinButton.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C204C401E25BA9A008BF2B8 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		0C8A46811E24A53B003C7D39 /* RateUsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateUsViewModel.swift; sourceTree = "<group>"; };
 		0C8A46871E2526A4003C7D39 /* PinButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinButtonViewController.swift; sourceTree = "<group>"; };
 		0C8A46881E2526A4003C7D39 /* PinButton.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PinButton.storyboard; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				94040A001E1DF75600FE53A1 /* EmailViewController.swift */,
+				0C204C401E25BA9A008BF2B8 /* UIDeviceExtension.swift */,
 				94040A021E1DF77300FE53A1 /* Email.storyboard */,
 			);
 			name = Email;
@@ -447,6 +450,7 @@
 				94040A051E1DF82400FE53A1 /* FloatingButtonViewController.swift in Sources */,
 				9494396D1E232DC100962D02 /* VoiceViewController.swift in Sources */,
 				940409D21E1CF3E000FE53A1 /* AppDelegate.swift in Sources */,
+				0C204C411E25BA9A008BF2B8 /* UIDeviceExtension.swift in Sources */,
 				94040A011E1DF75600FE53A1 /* EmailViewController.swift in Sources */,
 				940409E41E1CF6DB00FE53A1 /* FeedbackViewModel.swift in Sources */,
 			);

@@ -19,21 +19,17 @@ class RateUsViewController: UIViewController {
     }
     
     @IBAction func rateAction(_ sender: UIButton) {
-        // 提示controller
         let alertController = UIAlertController(title: rateViewModel.alertTitle,
                                                 message: rateViewModel.alertMessage,
                                                 preferredStyle: .alert)
-        // 立即评论
         let rate = UIAlertAction(title: rateViewModel.rateBtnTitle, style: .default) {
             action in
             self.gotoAppStore()
         }
-        // 暂不评价
         let later = UIAlertAction(title: rateViewModel.laterBtnTitle, style: .default) {
             action in
             self.todoAction()
         }
-        // 不再提醒
         let cancel = UIAlertAction(title: rateViewModel.cancleBtnTitle, style: .cancel) {
             action in
             self.todoAction()
@@ -45,14 +41,12 @@ class RateUsViewController: UIViewController {
     }
     
     func gotoAppStore() {
-        // 确认手机是否安装目标app
         if let url = URL(string: rateViewModel.qqMailUrl), UIApplication.shared.canOpenURL(url) {
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             } else {
                 UIApplication.shared.openURL(url)
             }
-            // 没有安装时提示
         } else {
             print("没有安装要打开的应用")
         }

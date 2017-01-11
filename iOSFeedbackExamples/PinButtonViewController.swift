@@ -18,11 +18,11 @@ class PinButtonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Pin Button"
         setupUI()
     }
     
     private func setupUI() {
+        self.title = "Pin Button"
         scrollView.contentSize = CGSize(width: 0, height: 1000)
         self.view.addSubview(pinBtn)
         pinBtn.setTitle("PinButton", for: .normal)
